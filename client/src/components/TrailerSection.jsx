@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { dummyTrailers } from "../assets/assets";
 import ReactPlayer from "react-player";
 import BlurCircle from "./BlurCircle";
-import { PlayCircleIcon } from "lucide-react"; // ✅ IMPORTED ICON
+import { PlayCircleIcon } from "lucide-react"; 
 
 const TrailerSection = () => {
   const [currentTrailer, setCurrentTrailer] = useState(dummyTrailers[0]);
@@ -15,20 +15,18 @@ const TrailerSection = () => {
         <BlurCircle top="-100px" right="-100px" />
 
         {/* Main Trailer Player */}
-        <ReactPlayer
-          url={currentTrailer.videoUrl}
-          controls
-          playing={false}
-          className="mx-auto max-w-full rounded-lg overflow-hidden"
-          width="960px"
-          height="540px"
-        />
+        <iframe width="560" height="315" src= { currentTrailer.videoUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
       </div>
 
       {/* Trailer Thumbnails */}
       <div className="group grid grid-cols-4 gap-4 md:gap-8 mt-8 max-w-3xl mx-auto">
         {dummyTrailers.map((trailer) => (
+          
+          
           <div
+
             key={trailer.image}
             className={`relative group-hover:not-hover:opacity-50 hover:-translate-y-1duration-300 transition
                 max-md:h-60 md:max-h-60 cursor-pointer
@@ -52,6 +50,7 @@ const TrailerSection = () => {
                          transform -translate-x-1/2 -translate-y-1/2"
             />
           </div>
+          
         ))}
       </div>
     </div>

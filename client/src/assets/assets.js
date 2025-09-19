@@ -1,3 +1,4 @@
+
 import logo from './logo.png'
 import marvelLogo from './marvelLogo.svg'
 import googlePlay from './googlePlay.svg'
@@ -17,11 +18,11 @@ export const assets = {
 export const dummyTrailers = [
     {
         image: "https://img.youtube.com/vi/WpW36ldAqnM/maxresdefault.jpg",
-        videoUrl: 'https://www.youtube.com/watch?v=WpW36ldAqnM'
+        videoUrl: "https://www.youtube.com/embed/76-BtFsgT5w?si=PvX4kk3zWSi8pHOK"
     },
     {
         image: "https://img.youtube.com/vi/-sAOWhvheK8/maxresdefault.jpg",
-        videoUrl: 'https://www.youtube.com/watch?v=-sAOWhvheK8'
+        videoUrl: "https://www.youtube.com/embed/R-sh3kfdHQ4?si=rVhkRJv-4F3F_UTm"
     },
     {
         image: "https://img.youtube.com/vi/1pHDWnXmK7Y/maxresdefault.jpg",

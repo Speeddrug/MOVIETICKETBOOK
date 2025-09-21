@@ -11,8 +11,9 @@ const Footer = () => {
         <div className="md:max-w-96">
           <img alt="Logo" className="h-11" src={assets.logo} />
           <p className="mt-6 text-sm">
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+           Speed_BookShow is your fast and convenient platform to discover and book movies, events, 
+           and shows online. With real-time seat selection, secure payments, and instant e-tickets, 
+           Speed_BookShow makes your entertainment experience quick, seamless, and hassle-free.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <img src={assets.googlePlay} alt="google play" className="h-9 w-auto" />

@@ -11,14 +11,24 @@ const TrailerSection = () => {
     <div className="px-6 md:px-16 lg:px-24 xl:px-44 py-20 overflow-hidden">
       <p className="text-gray-300 font-medium text-lg max-w-[960px]">Trailers</p>
 
-      <div className="relative mt-6">
-        <BlurCircle top="-100px" right="-100px" />
+     <div className="relative mt-6 w-full">
+  <BlurCircle top="-100px" right="-100px" />
 
-        {/* Main Trailer Player */}
-        <iframe width="560" height="315" src= { currentTrailer.videoUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  {/* Main Trailer Player */}
+  <div className="w-full overflow-hidden">
+    <iframe
+      className="w-full"
+      style={{ height: "315px" }} // fixed vertical height
+      src={currentTrailer.videoUrl}
+      title="YouTube video player"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerPolicy="strict-origin-when-cross-origin"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div>
 
-
-      </div>
 
       {/* Trailer Thumbnails */}
       <div className="group grid grid-cols-4 gap-4 md:gap-8 mt-8 max-w-3xl mx-auto">

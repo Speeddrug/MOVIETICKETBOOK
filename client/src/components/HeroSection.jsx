@@ -34,7 +34,8 @@ Guardians of the Galaxy
 
 {/* Description */}
 <p className='max-w-sm text-gray-300 text-sm md:text-base mt-2'>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem d architecto minima cumque deserunt, alias nemo? Ullam commodi nihil nobis eveniet!
+Guardians of the Galaxy is an action-packed Marvel adventure that follows a group of unlikely heroes—Star-Lord,
+ Gamora, Drax, Rocket, and Groot—as they band together to save the galaxy from a powerful villain.
 </p>
 
 {/* Explore Movies Button */}
